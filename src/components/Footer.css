@@ -1,0 +1,116 @@
+.footer {
+    width: 100%;
+    background-color: black;
+    /* height: 200px; */
+}
+
+.footer__wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__company {
+    margin: 20px 60px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: white;
+}
+
+.footer__contacts {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+}
+
+.footer__email, .footer__tel, .footer__address {
+    padding-right: 5px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    color: white;
+}
+
+.footer__email::before, .footer__tel::before, .footer__address::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__address::before {
+    background-image: url(../images/map-pin.svg);
+}
+
+.footer__email::before {
+    background-image: url(../images/mail.svg);
+    filter: invert(100%);
+}
+
+.footer__tel::before {
+    background-image: url(../images/phone-call.svg);
+    filter: invert(100%);
+}
+
+.footer__copyright {
+    color: lightgray;
+    padding: 20px 60px;
+    /* padding-left: 60px;
+    padding-top: 20px; */
+    font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer__wrapper {
+        margin-top: 20px;
+        /* height: 180px; */
+    }
+
+    .footer__company {
+        margin: 20px 20px;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: underline;
+        color: white;
+    }
+
+    .footer__copyright {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .footer__contacts {
+        margin-right: 20px;
+        gap: 10px;
+    }
+
+    .footer__email, .footer__tel, .footer__address {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .footer__email::before, .footer__tel::before, .footer__address::before {
+        width: 16px;
+        height: 16px;
+        left: -24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: normal;
+    }
+}

@@ -1,0 +1,33 @@
+.carousel {
+    display: flex;
+    position: relative;
+}
+
+.carousel__left, .carousel__right {
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: none;
+    border: none;
+    font-size: 36px;
+    font-weight: 400;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.carousel__left:hover, .carousel__right:hover {
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+    
+.carousel__left {
+        left: 0px;
+}
+    
+.carousel__right {
+        right: 0px;
+}

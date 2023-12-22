@@ -1,0 +1,56 @@
+.button {
+    /* width: 320px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border: aliceblue 2px solid;
+    color: aliceblue; */
+    cursor: pointer;
+    transition: opacity .4s ease;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+.button__promo {
+    width: 320px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+    border: aliceblue 2px solid;
+    color: aliceblue;
+}
+
+.button__file {
+    padding: 8px 12px;
+    width: 250px;
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* text-align: center; */
+    text-decoration: none;
+    line-height: 16px;
+    background-color: #eff1f4;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.button__title {
+    position: relative;
+    padding-left: 14px;
+}
+
+.button__title::before {
+    left: -6px;
+    position: absolute;
+    content: '';
+    background-image: url(../../images/file-text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}

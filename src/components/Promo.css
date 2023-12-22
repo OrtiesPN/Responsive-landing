@@ -1,0 +1,102 @@
+.promo {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__company {
+    margin: 0;
+    color: white;
+    font-size: 72px;
+    line-height: 65px;
+    font-weight: 700;
+}
+
+.promo__about {
+    background-color: black;
+    color: white;
+    width: 305px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    font-size: 24px;
+}
+
+.promo__contacts {
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__address {
+    /* width: 80%; */
+    position: relative;
+    padding-right: 5px;
+    padding-left: 30px;
+    align-self: flex-end;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+    font-style: normal;
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+}
+
+.promo__email, .promo__tel {
+    /* border-radius: 0 15px 0 0; */
+    padding-right: 5px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    background-color: white;
+    color: black;
+}
+
+.promo__email::before, .promo__tel::before, .promo__address::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promo__address::before {
+    background-image: url(../images/map-pin.svg);
+}
+
+.promo__email::before {
+    background-image: url(../images/mail.svg);
+}
+
+.promo__tel::before {
+    background-image: url(../images/phone-call.svg);
+}
+
+/* .promo__caption {
+    padding: 0 100px 0 100px;
+    color: rgb(253, 253, 253);
+    font-size: 28px;
+    text-align: center;
+    /* border-left: 2px solid aliceblue; */
+/* } */ 
