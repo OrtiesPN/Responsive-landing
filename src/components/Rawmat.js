@@ -1,10 +1,13 @@
 import Button from './Button/Button'
-import Carousel from './Carousel/Carousel'
+import drumsCont from '../images/drums_cont.jpg'
 import oilDrums from '../images/oil_drums.jpg';
 import oilTanks from '../images/ibc-tank.png';
 import indiaFlag from '../images/lq_india.jpg';
+import chinaFlag from '../images/lq_china.jpg';
+import jiahuaLogo from '../images/jiahua_logo.jpg';
 import safetyPassportOil from '../files/MSDS-safety-pass_light.pdf';
 import specificationOil from '../files/COA22-23_light.pdf';
+import safetyPassportPoly from '../files/MSDS D220_web.pdf';
 import './Rawmat.css'
 import { useState } from 'react';
 
@@ -37,12 +40,12 @@ export default function Rawmat() {
                 >Полиол</button>
             </div>
             <article className='rawmat__card'>
-            
-            <div className='rawmat__card-content'>
+            {option === 1 ? (
+                <div className='rawmat__card-content'>
                 <div className='rawmat__card-images'>
-                  <img className='rawmat__card-image' src={oilDrums} alt='Oil drums'/>
-                  <img className='rawmat__card-image' src={oilTanks} alt='Oil tanks'/>
-                  <img className='rawmat__card-image' src={indiaFlag} alt='India flag'/>
+                  <img className='rawmat__card-image' src={oilDrums} alt='Тара - бочки'/>
+                  <img className='rawmat__card-image' src={oilTanks} alt='Тара ПТ куб'/>
+                  <img className='rawmat__card-image' src={indiaFlag} alt='Флаг Индии'/>
                 </div>
                 <div className='rawmat__card-text-block'>
                     <p className='rawmat__card-text'>
@@ -105,6 +108,60 @@ export default function Rawmat() {
                     </div>
                 </div>
             </div>
+            ) : option === 2 ? (
+                <div className='rawmat__card-content rawmat__card-content_option-2'>
+                <div className='rawmat__card-images'>
+                  <img className='rawmat__card-image' src={drumsCont} alt='Бочки в контейнере'/>
+                  <img className='rawmat__card-image' src={jiahuaLogo} alt='Логотип'/>
+                  <img className='rawmat__card-image' src={chinaFlag} alt='Флаг Китая'/>
+                </div>
+                <div className='rawmat__card-text-block'>
+                    <p className='rawmat__card-text'>
+                    Полиол марки Puranol D220 представляет собой полипропиленгликоль с молекулярной массой 2000. Данное сырье широко используется в полиуретановой промышленности, например при производстве клеев, пены и различных покрытий где необходимы эластичнойсть и влагостойкость.  Мы предлагаем химикат напрямую от производителя сырья из Китая. 
+                    </p>
+                    <table className='rawmat__card-table'>
+                        <tbody>
+                            <tr>
+                                <th className='rawmat__card-table-header'>Наименование показателей</th>
+                                <th className='rawmat__card-table-header'>Результаты анализа</th>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td>Внешний вид</td>
+                                <td >Бесцветная жидкость с легким запахом</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Кислотное число</td>
+                                <td >5-7</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Точка кипения</td>
+                                <td >≥ 250 ° С</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Гидроксильное число</td>
+                                <td >54-59 mg KOH/g</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Удельный вес</td>
+                                <td >1.031 при 25° С</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Вязкость динамическая</td>
+                                <td >200-400 сP при 25° С</td>
+                            </tr>
+                            <tr className='rawmat__card-table-raw'>
+                                <td >Растворимость</td>
+                                <td >Растворимость в воде менее 1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div className='rawmat__card-button-block'>
+                        <Button type="file" title="Паспорт безопасности" fileLink={safetyPassportPoly} />
+                    </div>
+                </div>
+            </div>
+            ) : ""}
+            
         </article>
         </section>
     )

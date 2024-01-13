@@ -5,7 +5,6 @@ import primer_pu_img from '../images/LQ_Primer PU + Solvente.jpg';
 import wert_pur_img from '../images/LQ_WertPUR.jpg';
 import wert_2k_img from '../images/LQ_Wert2k.jpg';
 import ibc102c_img from '../images/LQ_10-2c.jpg';
-import ibc102c_eco_img from '../images/LQ_10-2c-eco.jpg';
 import recoll25k_img from '../images/LQ_Recoll25_2k_new.jpg';
 import silanblok_img from '../images/LQ_silanblok.jpg';
 import titanium_img from '../images/LQ_Titanium.jpg';
@@ -19,7 +18,6 @@ import legastucco_img from '../images/LQ_legastucco.jpg';
 import primer_pu_pdf from '../files/primer-pu-rus_web.pdf';
 import wert_pur_pdf from '../files/wert pur & wert plus.pdf';
 import ibc_pdf from '../files/parquet-0160-eco-rus_web.pdf';
-import ibc_green_pdf from '../files/parquet-0160-gren-line-rus_web.pdf';
 import recoll25k_pdf from '../files/recoll-252k-new-rus_web.pdf';
 import silanblok_pdf from '../files/recoll-252k-new-rus_web.pdf';
 import titanium_pdf from '../files/RECOLL TITATINUM 2K RUS_web.pdf';
@@ -66,13 +64,6 @@ const Glue = [
         image: ibc102c_img,
         description: "Двухкомпонентный клей для деревянных полов без растворителей. Двухкомпонентный эпоксиполиуретановый безводный клей для наклеивания деревянных полов на цементную стяжку или на уже существующие неабсорбирующие половые покрытия (мрамор, плитка, мозаичные полы, деревянные основы)",
         specs: ibc_pdf,
-    },
-    {
-        id: "gl04",
-        name: "IBC 10-2C Green Line",
-        image: ibc102c_eco_img,
-        description: 'Серия "Green Line" соответствует повышенным экологическим требованиям. Двухкомпонентный эпоксиполиуретановый безводный клей для наклеивания деревянных полов на цементную стяжку или на уже существующие неабсорбирующие половые покрытия (мрамор, плитка, мозаичные полы, деревянные основы)',
-        specs: ibc_green_pdf,
     },
     {
         id: "gl05",
