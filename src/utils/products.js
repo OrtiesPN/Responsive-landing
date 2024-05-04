@@ -19,7 +19,7 @@ import primer_pu_pdf from '../files/primer-pu-rus_web.pdf';
 import wert_pur_pdf from '../files/wert pur & wert plus.pdf';
 import ibc_pdf from '../files/parquet-0160-eco-rus_web.pdf';
 import recoll25k_pdf from '../files/recoll-252k-new-rus_web.pdf';
-import silanblok_pdf from '../files/recoll-252k-new-rus_web.pdf';
+import silanblok_pdf from '../files/silanblok-sm-rus_web.pdf';
 import titanium_pdf from '../files/RECOLL TITATINUM 2K RUS_web.pdf';
 import parquet56_pdf from '../files/parquet-t56-rus_web.pdf';
 import superfond_pdf from '../files/superfond-rus_web.pdf';

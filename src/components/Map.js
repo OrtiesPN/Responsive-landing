@@ -16,7 +16,7 @@ export default function MapSection() {
                             }}  
                             properties={{
                                 balloonContentBody:
-                                  "ИНРИТА. Каширский проезд, д.17, стр.4. Москва, РФ",}}
+                                  "ИТАПОЛ: ООО \"ИНРИТА\". Каширский проезд, д.17, стр.4. Москва, РФ",}}
                             />
                         <Placemark
                             modules={["geoObject.addon.balloon"]}
