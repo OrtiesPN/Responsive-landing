@@ -5,7 +5,7 @@ export default function Promo() {
     return (
         <section className="promo">
              <div className='promo__title'>
-                <h1 className="promo__company">ИТАПОЛ</h1>
+                <h1 className="promo__company">ИНРИТА</h1>
                 <p className='promo__about'>ПАРКЕТНАЯ ХИМИЯ</p>
                 <address className='promo__contacts'>
                 <a href='mailto:itapol@yandex.ru' className='promo__email'>itapol@yandex.ru</a>

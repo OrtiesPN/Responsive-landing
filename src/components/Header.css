@@ -50,6 +50,7 @@
 .header__nav_mobile_active{
     visibility: visible;
     opacity: 1;
+    z-index: 1;
     /* transform: translateX(-100%); */
 }
 

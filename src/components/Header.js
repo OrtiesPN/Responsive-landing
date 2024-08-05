@@ -19,7 +19,7 @@ export default function Header({isBurgerClicked, onClickBurger, doSticky}) {
     return (
         <header className={doSticky ? "header header_sticky" : "header" }>
             {/* <p className="header__company">ИНРИТА</p> */}
-            <a className='header__link header__link_company' onClick={toggleHome}>ИТАПОЛ</a>
+            <a className='header__link header__link_company' onClick={toggleHome}>ИНРИТА</a>
             { isMobile ? (
                 <>
                     <BurgerButton isBurgerClicked={isBurgerClicked} onClickBurger={onClickBurger} />
